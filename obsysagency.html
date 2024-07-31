@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <title>Obys Agency</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
+    />
+
+    <style>
+      .underline:hover {
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: white;
+        color: transparent;
+        text-decoration: none;
+      }
+      #text-scroll,
+      #textscrollrev,
+      .ri-arrow-right-line,
+      .ri-arrow-right-down-line {
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: white;
+        color: transparent;
+      }
+      ._canvas_container {
+        z-index: 99999999 !important;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <!-- Plain_Light -->
+  <!-- Plain -->
+  <!-- Silk_Serif -->
+  <body class="text-white bg-[#151515] relative h-screen max-w-screen">
+    <div
+      id="cursor"
+      class="fixed opacity-0 h-[4vh] w-[4vh] border-2 mix-blend-difference 0 rounded-[50%] border-white"
+    ></div>
+    <div
+      id="loader"
+      class="fixed flex h-[100vh] w-[100%] bg-[#000000] items-center text-[6.5vw] font-['Plain'] font-extrabold leading-snug overflow-hidden"
+    >
+      <div
+        id="loaderText"
+        class="uppercase pl-[15vw] flex flex-col justify-center h-[100%]"
+      >
+        <div id="text" class="flex gap-2 overflow-hidden">
+          <section class="text-[4vw] font-['Silk_Serif'] pt-[1vw] flex">
+            <h3 class="counter text-left w-[7vw] pl-2">0</h3>
+            <h3>-</h3>
+            <h3>100</h3>
+          </section>
+          <h2 class="pl-7">Your</h2>
+        </div>
+        <div id="text" class="overflow-hidden"><h2>Web Experience</h2></div>
+        <div id="text" class="overflow-hidden flex gap-4">
+          <h2>Is Loading Right</h2>
+          <div id="text_change" class="text-left pr-3">Now</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" class="">
+      <div id="sambhalkr" class="">
+        <!-- page1 Starts______________________________________________________ -->
+        <div
+          id="page1"
+          class="bg- h-[100vh] max-w-[100vw]"
+          data-scroll
+          data-scroll-speed="-2"
+        >
+          <div id="nav" class="flex p-[5vh] justify-between">
+            <div id="leftPart" class="flex gap-3 p-2 md:w-[30%] w-[95vw] justify-between">
+              <div class="flex justify-between w-[100%] md:w-[30%] gap-10 p-2">
+                <i class="ri-menu-2-line"></i>
+                <svg
+                  class="brand__svg"
+                  width="71"
+                  height="27"
+                  viewBox="0 0 71 27"
+                >
+                  <path
+                    d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M65.7937 8.96329C65.7937 8.04398 66.4826 7.35449 67.4012 7.35449C68.3198 7.35449 69.0087 8.04398 69.0087 8.96329C69.0087 9.88261 68.3198 10.5721 67.4012 10.5721C66.4826 10.5721 65.7937 9.88261 65.7937 8.96329Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M59.019 18.3861C59.019 17.4668 59.708 16.7773 60.6266 16.7773C61.5451 16.7773 62.2341 17.4668 62.2341 18.3861C62.2341 19.3055 61.5451 19.9949 60.6266 19.9949C59.8228 19.9949 59.019 19.3055 59.019 18.3861Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M41.3365 9.88276C40.5327 8.27396 39.6142 7.8143 39.04 7.58447H46.3887C45.9294 7.8143 45.0108 8.04413 45.0108 8.96344C45.0108 9.19327 45.1257 9.65293 45.3553 10.1126L48.3407 16.6627L46.5035 20.225L41.3365 9.88276Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M51.8998 9.30819C51.8998 8.04413 50.9812 7.69939 50.2922 7.58447H54.6555C53.8517 7.8143 52.8183 8.27396 51.7849 10.1126C51.8998 9.88276 51.8998 9.65293 51.8998 9.30819Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M66.7122 17.9266C66.7122 16.2029 65.2195 15.6283 63.0378 14.5941C60.8562 13.5599 59.019 12.7555 59.019 10.8019C59.019 8.73348 60.971 7.12468 64.1861 7.00977C63.1527 7.23959 62.3489 8.15891 62.3489 9.42296C62.3489 10.9168 63.612 11.4914 65.9084 12.5256C68.2049 13.5599 70.2717 14.4792 70.2717 16.6626C70.2717 19.1907 67.4011 20.3398 64.6454 20.4547C65.9084 20.2249 66.7122 19.1907 66.7122 17.9266Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M21.0129 2.64303C21.0129 1.6088 20.3239 0.919313 19.2905 0.689485L24.4576 0V20.3398C24.4576 20.3398 22.6204 20.4547 20.8981 21.8337V2.64303H21.0129Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div class="text-sm leading-none hidden sm:flex flex-col">
+                <h3>Obsys-</h3>
+                <h3>Creative</h3>
+                <h3>Design</h3>
+                <h3>Agency</h3>
+              </div>
+            </div>
+            <div id="rightpart" class="hidden md:flex w-[60%] justify-end">
+              <div class="w-[30%] flex justify-between p-3 font-semibold">
+                <h3>Works</h3>
+                <h3>About</h3>
+                <h3>Contact</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="mainTextPage2"
+            class="md:text-[16vh] text-[18vw] mt-[6vh] w-[65%] font-['Plain'] lg:ml-[18vw] uppercase leading-none flex justify-between p-2"
+          >
+            <div class="">
+              <h3 class="font-['Silk_Serif'] text-[0.45em] top-2.5">01</h3>
+            </div>
+            <div id="animetext">
+              <div class="overflow-hidden lg:flex"><h3>we</h3><h3> &nbsp; design</h3></div>
+              <div class="overflow-hidden"><h3>Unique</h3></div>
+              <div id="page2animetext" class="lg:flex gap-3 overflow-hidden">
+                <h3 class="underline">Web/</h3>
+                <h3 class="underline hover:text-stroke hover:text-transparent">
+                  Graphic
+                </h3>
+              </div>
+              <div class="overflow-hidden"><h3>Experience</h3></div>
+            </div>
+          </div>
+          <div
+            id="chotaAnimation"
+            class="text-[3vh] overflow-hidden inline-block pl-[10vw]"
+          >
+            <h2 class="opacity-50">Scroll</h2>
+          </div>
+        </div>
+        <!-- page1 Starts______________________________________________________ -->
+
+        <!-- page2 starts_____________________________________________ -->
+        <div
+          id="page2"
+          class="h-[100vh] max-w-[100vw] flex items-center justify-end mt-10 relative"
+          data-scroll
+        >
+          <div
+            id="vdoContainer"
+            class="h-[80%] bg-[url('https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg')] bg-cover"
+          >
+            <div
+              id="vcCircle"
+              class="h-[20vh] absolute right-[10%] -top-[0.25vh] w-[20vh] bg-[#FFA63D] rounded-[50%] flex justify-center items-center"
+            >
+              <i id="playbutton" class="ri-play-fill text-[10vh]"></i>
+              <i
+                id="pausebutton"
+                class="text-[10vh] hidden ri-pause-large-line"
+              ></i>
+            </div>
+            <video
+              src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"
+              autoplay
+              muted
+              loop
+              class="opacity-0 h-[100%] w-[100%]"
+            ></video>
+          </div>
+        </div>
+        <!-- _____________________________page2 ends____________________ -->
+
+        <!-- page2Part2________________________________starts -->
+        <!-- <div id="page2Part2" class="h-[100vh] max-w-[100vw]" data-scroll data-scroll-speed="2"> -->
+      </div>
+      <!-- page2Part2________________________________Ends -->
+      <div
+        id="page2Part2"
+        class="pb-20 max-w-[100vw] h-auto p-2"
+      >
+        <div class="flex gap-20 pl-[20vw]"
+        data-scroll
+        data-scroll-amount="2">
+          <h2 class="font-['Silk_Serif'] pt-2 text-[12vh]">02</h2>
+          <div class="flex w-[100%] flex-col gap-10">
+            <h1 class="uppercase text-[15vh] font-['Plain_Light']">
+              our projects
+            </h1>
+            <div
+              class="border-t-[0.2vh] border-white w-[85%] mt-10 pt-20"
+            ></div>
+          </div>
+        </div>
+        <div id="img_container" class="h-[150vh] w-[100%] flex justify-between">
+          <div id="img1" 
+          data-scroll
+              data-scroll-speed="1.5"
+          class="w-[27vw] h-[60%] ml-[5vw]"
+          >
+            <div
+              class="text-2xl mb-4 font-['Plain'] h-[4.8vh] overflow-hidden uppercase"
+              id="hoverdiv"
+            >
+              <div class="text-4xl" id="text-up">
+                <h1>olga pruduka</h1>
+                <h1>olga pruduka</h1>
+              </div>
+            </div>
+            <div
+              id="img_container"
+              class="overflow-hidden w-[27vw] h-[60%] relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1721754630074-0b255a688a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="h-[100%] w-[100%] object-cover"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1657742758207-f54abf386396?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="h-[100%] w-[100%] object-cover"
+              />
+            </div>
+            <div
+              id="imgbottomtext"
+              class="flex justify-between border-b-2 py-[2vh]"
+            >
+              <h1 class="w-[55%]">Logo design, Website design, Development</h1>
+              <h1>2023</h1>
+            </div>
+          </div>
+          <div id="img2" class="w-[27vw] h-[100%] ml-[5vw] relative"
+          data-scroll
+          data-scroll-speed="2"
+          >
+            <div
+              class="text-2xl mb-4 font-['Plain'] h-[4.8vh] overflow-hidden"
+              id="hoverdiv"
+            >
+              <div class="text-4xl uppercase" id="text-up">
+                <h1>aim</h1>
+                <h1>aim</h1>
+              </div>
+            </div>
+            <div
+              id="img_container"
+              class="overflow-hidden w-[27vw] h-[60%] relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1501186758051-167ca3c0fde8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="h-[100%] w-[100%] object-cover"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1657742758207-f54abf386396?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="h-[100%] w-[100%] object-cover"
+              />
+            </div>
+            <div
+              id="imgbottomtext"
+              class="flex justify-between border-b-2 py-[2vh]"
+            >
+              <h1 class="w-[55%]">Logo design, Website design, Development</h1>
+              <h1>2023</h1>
+            </div>
+          </div>
+          <div class="h-[72.5%] hidden md:flex items-end p-5">
+            <div
+              id="circleImgcontainer"
+              class="h-[55vh] w-[55vh] border-2 rounded-[50%] flex justify-center items-center relative overflow-hidden"
+            >
+              <i class="ri-arrow-right-down-line text-[50vh]"></i>
+              <div
+                id="circleImgcontainerinner"
+                class="h-[0%] w-[0%] overflow-hidden bg-white absolute flex justify-center items-center text-black rounded-[50%]"
+              >
+                <div
+                  id="circleImgcontainerText"
+                  class="overflow-hidden w-[100%] h-[20%] flex justify-center items-center text-nowrap text-xl"
+                >
+                  <div>
+                    We are thrilled to have on you board. <br />
+                    We hope you enjoy our projects💖
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="imgcontainer2"
+          class="h-[140vh] -mt-[30vh] flex justify-between p-10"
+        >
+          <div
+            id="circle2Imgcontainer"
+            class="h-[45vh] w-[45vh] border-2 rounded-[50%] hidden sm:flex justify-center items-center relative overflow-hidden"
+          >
+            <i class="ri-arrow-right-down-line text-[50vh]"></i>
+            <div
+              id="circle2Imgcontainerinner"
+              class="h-[0%] w-[0%] overflow-hidden bg-white absolute flex justify-center items-center text-black rounded-[50%]"
+            >
+              <div
+                id="circle2ImgcontainerText"
+                class="overflow-hidden w-[100%] h-[20%] flex justify-center items-center text-nowrap text-2xl"
+              >
+                <div>It will make you WOW! 😘</div>
+              </div>
+            </div>
+          </div>
+          <div id="images" class="flex w-[70%] gap-5 justify-around">
+            <div id="imge1" class="h-[70vh] w-[30vw] mt-[15vh]"
+            data-scroll
+                data-scroll-speed="2"
+                >
+              <div
+              class="text-2xl uppercase mb-4 font-['Plain'] h-[4.8vh] overflow-hidden"
+              id="hoverdiv"
+            >
+              <div class="text-4xl" id="text-up">
+                <h1>ochi</h1>
+                <h1>ochi</h1>
+              </div>
+            </div>
+              <div
+                id="img_container"
+                class="overflow-hidden w-[27vw] h-[75%] relative"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1720048169970-9c651cf17ccd?q=80&w=1614&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="h-[100%] w-[100%] object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1657742758207-f54abf386396?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="h-[100%] w-[100%] object-cover"
+                />
+              </div>
+              <div
+                id="imgbottomtext"
+                class="flex justify-between border-b-2 py-[2vh]"
+              >
+                <h1 class="w-[65%]">
+                  Logo design, Website design, Development
+                </h1>
+                <h1>2023</h1>
+              </div>
+            </div>
+            <div id="imge2" class="h-[110vh] w-[40vw]">
+              <div id="imge2" class="h-[90vh] w-[37vw]"
+              data-scroll
+              data-scroll-speed="-2">
+                <div
+              class="text-2xl uppercase mb-4 font-['Plain'] h-[4.8vh] overflow-hidden"
+              id="hoverdiv"
+            >
+              <div class="text-4xl" id="text-up">
+                <h1>David Lexar</h1>
+                <h1>David Lexar</h1>
+              </div>
+            </div>
+                <div
+                  id="img_container"
+                  class="overflow-hidden w-[100%] h-[100%]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1722090487269-033aa133249f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+                    alt=""
+                    class="h-[100%] w-[100%] object-cover"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1657742758207-f54abf386396?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="h-[100%] w-[100%] object-cover"
+                  />
+                </div>
+                <div
+                  id="imgbottomtext"
+                  class="flex justify-between border-b-2 py-[2vh]"
+                >
+                  <h1 class="w-[65%]">
+                    Logo design, Website design, Development
+                  </h1>
+                  <h1>2023</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page4 starts______________________________________________________  -->
+      <div id="page4" class="pb-20 max-w-[100vw] p-2" data-scroll>
+        <div id="page-4content" class="w-[75%] ml-[20%] mt-2">
+          <div class="flex gap-20">
+            <h2 class="font-['Silk_Serif'] pt-2 text-[12vh]">03</h2>
+            <div>
+              <div>
+                <h1 class="uppercase text-[15vh] font-['Plain_Light']">
+                  About Obys
+                </h1>
+              </div>
+              <div class="border-t-[0.2vh] border-white w-[90%] mt-20 pt-20">
+                <h1 class="text-[4.25vh] w-[58%] font-['Plain']">
+                  Our agency is about people who love creating, designing and
+                  developing wow projects. In the same time we are a boutique
+                  agency that is more than the collective. We learn and grow,
+                  win and celebrate together.
+                </h1>
+              </div>
+              <div
+                data-scroll
+                data-scroll-speed="2"
+                class="flex flex-col w-[100%] pt-10"
+              >
+                <div class="flex gap-5">
+                  <div id="img" class="w-[60%] bg-blue-200 h-auto">
+                    <img
+                      src="https://obys.agency/wp-content/uploads/2020/07/content-image01.jpg"
+                      alt=""
+                      class="h-[100%]"
+                    />
+                  </div>
+                  <div id="text" class="w-[25%] text-xl">
+                    <p>
+                      We are happy to present our new website and updated
+                      version of Obys agency. As before we are open for new
+                      projects worldwide! <br /><span
+                        class="inline-block mt-10"
+                      >
+                        Would you like to have award winning site or unique
+                        branding style, please say hi to our manager
+                        —info@obys.agency. And we will help you with the
+                        pleasure.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-[55%] bg-[#578ae7] ml-[20vw] -mt-[35vh] gap-20 flex flex-col px-[5vw] py-[5vh]"
+                  data-scroll
+                  data-scroll-speed="2"
+                >
+                  <div
+                    class="flex justify-between border-b-2 pb-2 items-center"
+                  >
+                    <h3 class="text-[1.8vw]">Awwwards x16</h3>
+                    <h3 class="text-[1vw] text-right">
+                      SOTM, SOTD and Honrable Mentions
+                    </h3>
+                  </div>
+                  <div
+                    class="flex justify-between border-b-2 pb-2 items-center"
+                  >
+                    <h3 class="text-[1.8vw]">Red Dot Award x1</h3>
+                    <h3 class="text-[1vw]">Best of the Best</h3>
+                  </div>
+                  <div
+                    class="flex justify-between border-b-2 pb-2 items-center"
+                  >
+                    <h3 class="text-[1.8vw]">FWA x11</h3>
+                    <h3 class="text-[1vw]">FWA of The Day</h3>
+                  </div>
+                  <div
+                    class="flex justify-between border-b-2 pb-2 items-center"
+                  >
+                    <h3 class="text-[1.8vw]">CSSDA x23</h3>
+                    <h3 class="text-[1vw]">
+                      WOTM, WOTD and UI, UX, Innovation
+                    </h3>
+                  </div>
+                  <div
+                    class="flex justify-between border-b-2 pb-2 items-center"
+                  >
+                    <h3 class="text-[1.8vw]">Behance x25</h3>
+                    <h3 class="text-[1vw]">Interaction, Graphic Design</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[100%] border-t-2 pt-[3vh]">
+                <h3 class="font-semibold text-[1.3vw]">We Work With</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- page4 end______________________________________________________  -->
+
+      <!-- page5 starts______________________________________________________  -->
+      <div id="page5" class="w-[100%] overflow-x-hidden uppercase" data-scroll>
+        <div class="textanimtion">
+          <div id="text-scroll" class="text-[6vw] whitespace-nowrap">
+            <h1 class="inline-block">
+              Fashion - <span class="font-['Silk_Serif']">sport</span> -
+              technology -
+            </h1>
+            <h1 class="inline-block">
+              Fashion - <span class="font-['Silk_Serif']">sport</span> -
+              technology
+            </h1>
+          </div>
+          <div id="textscrollrev" class="text-[6vw] whitespace-nowrap -mt-10">
+            <h1 class="inline-block">
+              ARCHITECTURE - <span class="font-['Silk_Serif']">BEAUTY</span> -
+              REAL ESTATE -
+            </h1>
+            <h1 class="inline-block">
+              ARCHITECTURE - <span class="font-['Silk_Serif']">BEAUTY</span> -
+              REAL ESTATE
+            </h1>
+          </div>
+          <div id="text-scroll" class="text-[6vw] whitespace-nowrap -mt-10">
+            <h1 class="inline-block">
+              Science - <span class="font-['Silk_Serif']">Partners</span> -
+              Travels -
+            </h1>
+            <h1 class="inline-block">
+              Science - <span class="font-['Silk_Serif']">Partners</span> -
+              Travels
+            </h1>
+          </div>
+          <div id="textscrollrev" class="text-[6vw] whitespace-nowrap -mt-10">
+            <h1 class="inline-block">
+              <span class="font-['Silk_Serif']">Hotels</span>- Automobile -<span
+                class="font-['Silk_Serif']"
+              >
+                Music</span
+              >
+              -
+            </h1>
+            <h1 class="inline-block">
+              <span class="font-['Silk_Serif']">Hotels</span>- Automobile -<span
+                class="font-['Silk_Serif']"
+              >
+                Music</span
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- page5 ends______________________________________________________  -->
+
+      <!-- page6 Starts______________________________________________________  -->
+
+      <div
+        id="page6"
+        class="mt-24 max-w-[100vw] h-[100vh]"
+        data-scroll
+        data-scroll-speed="2"
+      >
+        <div id="page-4content" class="w-[80%] ml-[18vw] mt-2">
+          <div class="flex gap-20">
+            <h2 class="font-['Silk_Serif'] px-[5vh] text-[7.2vh]">04</h2>
+            <div class="w-[90%]">
+              <div id="fontchangediv">
+                <h1
+                  id="fontchange"
+                  class="uppercase text-[15vh] font-['Plain_Light']"
+                >
+                  Let's Create<i class="ri-arrow-right-line text-[18vh]"></i>
+                </h1>
+              </div>
+              <div
+                class="flex justify-start items-center border-t-[0.2vh] border-b-[0.2vh] pb-[4vh] border-white w-[95%] mt-20 pt-20"
+              >
+                <div
+                  data-scroll
+                  data-scroll-speed="-2"
+                  class="w-[95%] py-10 flex justify-between pr-[10vw]"
+                >
+                  <div id="footerright">
+                    <h1 class="pb-[3vh] text-lg font-semibold">Socials</h1>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1>Dribble</h1>
+                        <h1 class="text-[#B2B2B2]">Dribble</h1>
+                      </div>
+                    </div>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1>Behance</h1>
+                        <h1 class="text-[#B2B2B2]">Behance</h1>
+                      </div>
+                    </div>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1>Instagram</h1>
+                        <h1 class="text-[#B2B2B2]">Instagram</h1>
+                      </div>
+                    </div>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1>Facebook</h1>
+                        <h1 class="text-[#B2B2B2]">Facebook</h1>
+                      </div>
+                    </div>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1>Twitter</h1>
+                        <h1 class="text-[#B2B2B2]">Twitter</h1>
+                      </div>
+                    </div>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1>Youtube</h1>
+                        <h1 class="text-[#B2B2B2]">Youtube</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="footercenter">
+                    <h1 class="pb-[3vh] text-lg">Address</h1>
+                    <div class="text-2xl font-['Plain']">
+                      <h1>Zamarstynivska 55</h1>
+                    </div>
+                    <div class="text-2xl font-['Plain']">
+                      <h1>79019 Lviv</h1>
+                    </div>
+                    <div class="text-2xl font-['Plain']"><h1>Ukraine</h1></div>
+                  </div>
+                  <div id="footerleft">
+                    <h1 class="pb-[3vh] text-lg">Say Hi!</h1>
+                    <div
+                      class="text-2xl font-['Plain'] h-[3.78vh] overflow-hidden"
+                      id="hoverdiv"
+                    >
+                      <div id="text-up">
+                        <h1 class="underline hover:font-normal">
+                          info@obys.agency
+                        </h1>
+                        <h1 class="text-[#B2B2B2]">info@obys.agency</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h1 class="pt-[2vh]" id="text-up">Obys Agency © 2024</h1>
+            </div>
+          </div>
+
+          <!-- page6 ends______________________________________________________  -->
+
+          <!-- __________main ends here____________________ -->
+        </div>
+      </div>
+    </div>
+    <!-- page6 ENd______________________________________________________  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
+    ></script>
+
+
+    <!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- letteringjs cdn -->
+<script src="https://cdn.jsdelivr.net/npm/letteringjs@0.7.0/jquery.lettering.min.js"></script>
+
+<!-- textillate cdn -->
+<script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
+
+    <script src="obsysagency.js"></script>
+  </body>
+</html>
